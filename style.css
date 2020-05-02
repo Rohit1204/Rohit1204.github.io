@@ -1,0 +1,411 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: black;
+    font-family: 'Nova Square', sans-serif;
+    
+
+
+}
+#loader{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background:#f4f4f4;
+    background-image: url(Disk-0.7s-200px.gif);
+    background-repeat: no-repeat ;
+    background-position: center;
+    z-index: 10;
+}
+.logo{
+    font-family: 'Nova Square', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: GREY;
+
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    line-height:257%;
+    transition: 0.3s;
+}
+.logo:hover{
+
+    transition: 0.3s;
+    color: teal;
+}
+p .name{
+    color:#CAD594;
+    font-size: 140%;
+    font-family: 'Nova Square', sans-serif;
+}
+.name:hover{
+    font-size: 25px;
+    transition: 0.3s;
+    color: #27ae60;
+}
+.main-menu
+{
+      width: 100%;
+    height: 600px;
+    background: url(cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+.main-menu img
+{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    z-index: 1
+    ;
+}
+.main-menu img:hover{
+    border: 4px solid teal;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
+{
+    color: teal;
+
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: white;
+    text-decoration: none;
+    font-weight:lighter;
+    margin-left:20px ;
+    text-transform: uppercase;
+    transition: color 0.4s;
+    display: table-cell;
+
+
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: teal;
+    
+}
+.navbar{
+    background-color: black;
+    z-index: 5;
+
+}
+.about
+{
+    background-color: black;
+    background: url(about.jpg) repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -25px;
+    width: 100%;
+    height: 620px;
+
+}
+.box
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+    margin-top: 5px;
+    background: #black;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+.skills-box
+{
+    position: relative;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.6;
+    margin-top: 5px;
+    background: ;
+    width: 100%;
+    border-radius: 5px;
+    height: 20%;
+}
+
+.about p {
+    font-family: 'Nova Square', sans-serif;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+}
+.about p:hover{
+    transition: 0.3s;
+    color: teal;
+
+}
+dl,dd, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 25px;
+}
+dd:hover{
+color: teal;
+transition: 0.3s;
+font-size: 25px;
+}
+.sec-header{
+    padding-top: 15px;
+    text-align: center;
+}
+.heading{
+    background: ;
+    margin-top:24px ;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.heading:hover{
+
+    color: teal;
+    transition: 0.3s;
+}
+
+.link{
+
+    text-align: center;
+}
+.link a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    margin: 0 3px;
+    border:2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    transition: 0.3s;
+}
+
+.heading-skill{
+    background: ;
+    margin-top:24px ;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.heading-skill:hover{
+
+    color: teal;
+    transition: 0.3s;
+}
+
+
+.skills
+{
+    background: url(skills.jpg) repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -25px;
+    width: 100%;
+    height: 1550px;
+
+
+}
+
+.skill-card{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #333;
+    opacity: 0.8;
+}
+
+.skill-card:hover
+{
+    transform: 0.3s;
+
+    border-radius: 50%;
+    border: 7px solid green;
+    background: #333;
+    opacity: 0.8;
+}
+.c{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 7px solid green;
+    border-right: 7px solid green;
+    border-top: 7px solid green;
+
+    border-left: 7px solid grey;
+    background: #333;
+    opacity: 0.8;
+}
+.java{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 7px solid green;
+    border-right: 7px solid green;
+    border-top: 7px solid grey;
+    border-left: 7px solid grey;
+    background: #333;
+    opacity: 0.8;
+}
+.python{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 7px solid green;
+    border-right: 7px solid green;
+    border-top: 7px solid green;
+    border-left: 7px solid grey;
+    background: #333;
+    opacity: 0.8;
+}
+.html{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 7px solid green;
+    border-right: 7px solid green;
+    border-top: 7px solid green;
+    border-left: 7px solid green;
+    background: #333;
+    opacity: 0.8;
+}
+
+.skill-card h2{
+    text-align:center;
+    line-height: 500%;
+    color: ;
+    font-size: 16px;
+}
+
+.skill-round-card{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+	border-radius:10px;
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background: black;
+    opacity: 0.8;
+    padding: 5px;
+    box-shadow:5px 5px 10px grey;
+}
+.skill-round-card:hover{
+    background: teal;
+    color: black;
+    transition: 0.4s;
+}
+
+.projects
+{
+    background: url(project.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+.projects-box{
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: black;
+    opacity: ;
+    padding: 5px;
+    box-shadow:5px 5px 10px grey;
+}
+.projects-box:hover{
+    background: teal;
+    color: black;
+    transition: 0.4s;
+}
+.github{
+    color: wheat;
+    font-size: 25px;
+    background:;
+}
+.github:hover{
+    color:white;
+    
+}
+
+
+  .achievment
+{
+    background: url(achievment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.achievment-box{
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: black;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow:5px 5px 10px grey;
+}
+.achievment-box:hover{
+    background: teal;
+    color: black;
+    transition: 0.4s;
+}
+Footer{
+    background:black;
+    color: white;
+    text-align:center;
+}
