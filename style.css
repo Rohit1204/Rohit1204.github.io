@@ -6,7 +6,7 @@ html,body
     padding: 0px;
     color: white;
     background-color: black;
-    font-family: 'Nova Square', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 
 
@@ -22,7 +22,7 @@ html,body
     z-index: 10;
 }
 .logo{
-    font-family: 'Nova Square', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 20px;
     text-decoration: none;
     color: GREY;
@@ -41,12 +41,13 @@ html,body
 p .name{
     color:#CAD594;
     font-size: 140%;
-    font-family: 'Nova Square', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .name:hover{
     font-size: 25px;
     transition: 0.3s;
     color: #27ae60;
+    transform: scale(1.4);
 }
 .main-menu
 {
@@ -64,7 +65,7 @@ p .name{
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     border: 3px solid #333;
     z-index: 1
@@ -141,7 +142,7 @@ p .name{
 }
 
 .about p {
-    font-family: 'Nova Square', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 4px;
     margin-bottom: 1rem;
@@ -200,6 +201,23 @@ font-size: 25px;
     display: inline-flex;
     transition: 0.3s;
 }
+.link a:hover{
+    transform: scale(1.4);
+    border-radius: 50%;
+  }
+  .fa-instagram{
+   color: pink;
+  }
+  .fa-linkedin{
+    color:#007bb5
+   }
+   .fa-github{
+    color:#ffffff;
+   }
+   .iconify{
+    color:#008000;
+   }
+  
 
 .heading-skill{
     background: ;
