@@ -33,6 +33,22 @@ html,body
     line-height:257%;
     transition: 0.3s;
 }
+@media only screen and (min-width: 768px) {
+    .projects {
+        height: 800px;
+    }
+    .achievment{
+        height: 600px;
+    }
+    }
+@media only screen and (max-width: 768px) {
+.projects {
+    height: 1350px;
+}
+.achievment{
+    height: 750px;
+}
+}
 .logo:hover{
 
     transition: 0.3s;
@@ -368,7 +384,6 @@ font-size: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1000px;
 }
 .projects-box{
     border-radius: 20px;
@@ -377,11 +392,12 @@ font-size: 25px;
     display: inline-block;
     position: relative;
     width: 220px;
-    height: 220px;
+    height: 250px;
     background: black;
     opacity: ;
     padding: 5px;
     box-shadow:5px 5px 10px grey;
+    overflow: hidden;
 }
 .projects-box:hover{
     background: teal;
@@ -405,7 +421,6 @@ font-size: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
 }
 .achievment-box{
     margin: 20px;
@@ -419,6 +434,7 @@ font-size: 25px;
     padding: 5px;
     border-radius: 4px;
     box-shadow:5px 5px 10px grey;
+    overflow: hidden;
 }
 .achievment-box:hover{
     background: teal;
