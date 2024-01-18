@@ -237,17 +237,32 @@
 
 
 </div>
-<!-- <div class="experience" id='experience'>
+<div class="experience" id='experience'>
   <div class="skills-box sec-header">
           <h2 class="heading-skill"><i class="fa fa-briefcase"></i> Experience</h2>
       <div class="container">
-        <div className="experience-image">
-          <AnimationLottie animationPath={experience} />
+        <div class="experience-description">
+          <div id="lottie-container" class="lottie-container"></div>
+        <div class="expirence-box">
+        <div class="experience-details">
+            <h6>Oct 2022-Present</h6>
+            <h4>Full-Stack Developer & Release Manager</h4>
+            <h5>Forwood Safety</h5>
+        </div>
+        <div class="expcard-img" >
+          <img src="assests/expImgBlack.svg"  alt="" />
+      </div>
+      <div class="experience-details">
+          <h6>Jan 2021-Oct 2022</h6>
+          <h4>Full-Stack Developer</h4>
+          <h5>Launchpad Fintech Pvt. Limited</h5>
+      </div>
+    </div>
       </div>
       </div>
 
 </div>
-</div> -->
+</div>
 <div class="projects" id='projects'>
 <div class="skills-box sec-header">
 <h2 class="heading-skill"><ion-icon name="git-branch"></ion-icon>  projects</h2>
@@ -318,12 +333,28 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/animatescroll.min.js"></script>
     <script src="js/app.js"></script>
-
+    <script>
+      // Replace 'your-animation.json' with the path to your JSON file
+      const animationPath = 'https://lottie.host/06ebabac-3a4f-46cb-9e2b-44132b7f152d/KLxfYtjw29.json';
+    
+      // Replace 'lottie-container' with the ID of your container element
+      const container = document.getElementById('lottie-container');
+    
+      // Load the Lottie animation
+      lottie.loadAnimation({
+        container: container,
+        renderer: 'svg', // Use 'svg' or 'canvas' based on your preference
+        loop: true, // Set to true for looping
+        autoplay: true, // Set to true for autoplay
+        path: animationPath // Path to your JSON file
+      });
+    </script>
     <!--script>
         var preloader=document.getElementById('loader');
         function myFunc(){

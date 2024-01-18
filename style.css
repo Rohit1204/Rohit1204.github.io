@@ -37,18 +37,103 @@ html,body
     .projects {
         height: 800px;
     }
+    .experience-details{
+        background: black;
+        height: 90px;
+        width: 80%;
+         }
+    .lottie-container{
+        width: 700px;
+        transform: translateX(-200px);
+     }
     .achievment{
         height: 600px;
     }
+    .expirence-box{
+        margin-left: 200px !important;
+        width: 100%;
+        margin-top: 80px;
+    }
+    .experience-description{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        width: 100%;
+    }
+    .experience{
+        background: rgb(12,11,51,1) ;
+        background-size: cover;
+        margin-top: -25px;
+        width: 100%;
+        height: 800px;
+}
     }
 @media only screen and (max-width: 768px) {
 .projects {
     height: 1350px;
 }
+.experience{
+    background: rgb(12,11,51,1) ;
+    background-size: cover;
+    margin-top: -25px;
+    width: 100%;
+    height: 900px;
+}
+.experience-details{
+    background: black;
+    height: 110px;
+    width: 80%;
+     }
+.lottie-container{
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+ }
 .achievment{
     height: 750px;
 }
+.experience-description{
+    display: block;
+    width: 100%;
+    height: 100px;
 }
+.expirence-box{
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 600px) {
+    .projects {
+        height: 1350px;
+    }
+    .lottie-container{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+     }
+    .achievment{
+        height: 750px;
+    }
+    .experience{
+        background: rgb(12,11,51,1) ;
+        background-size: cover;
+        margin-top: -25px;
+        width: 100%;
+        height: 1000px;
+}
+    .experience-description{
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    .expirence-box{
+        width: 100%;
+        margin-top: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    }
 .logo:hover{
 
     transition: 0.3s;
@@ -299,6 +384,30 @@ font-size: 25px;
 
 }
 
+
+
+
+
+ .experience-details > h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.325rem;
+    font-weight: 600;
+  }
+  .experience-details > h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #1D9BF0;
+  }
+  
+.experience-details > h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color:#1D9BF0;
+  }
+
 .skill-card{
     margin: 20px;
     margin-top: 50px;
@@ -427,6 +536,7 @@ font-size: 25px;
     box-shadow:5px 5px 10px grey;
     overflow: hidden;
 }
+
 .projects-box:hover{
     background: teal;
     color: black;
