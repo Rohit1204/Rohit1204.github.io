@@ -213,6 +213,9 @@ html,body
         margin-top: 60px;
         transform: translateX(20px);
     }
+    .expcard-img > img{
+        width :80px;
+    }
     }
 .logo:hover{
 
