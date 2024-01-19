@@ -84,12 +84,12 @@ html,body
 }
 
 .experience-content > h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 1.325rem;
     font-weight: 600;
   }
   .experience-content > h3 {
-    font-family: 'Roboto', cursive;
+    font-family: 'Helvetica', cursive;
     font-size: 1.125rem;
     font-weight: 600;
     font-style: italic;
@@ -163,7 +163,7 @@ html,body
 
   
   .experience-content > h3 {
-    font-family: 'Roboto', cursive;
+    font-family: 'Helvetica', cursive;
     font-size: 1.105rem;
     font-weight: 600;
     font-style: italic;
