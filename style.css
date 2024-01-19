@@ -37,11 +37,23 @@ html,body
     .projects {
         height: 800px;
     }
+    .long-text {
+        transform: translateX(20px);
+      }
+    .experience-content{
+        flex: 1;
+    }
+    .expcard-img{
+        width: 5%;
+    }
     .experience-details{
         background: black;
-        height: 90px;
-        width: 80%;
+        height: 125px;
+        width: 70%;
+        display: flex;
+        align-items: center;
          }
+
     .lottie-container{
         width: 700px;
         transform: translateX(-200px);
@@ -66,6 +78,37 @@ html,body
         width: 100%;
         height: 800px;
 }
+
+.expcard-img > img{
+    width :100px;
+}
+
+.experience-content > h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.325rem;
+    font-weight: 600;
+  }
+  .experience-content > h3 {
+    font-family: 'Roboto', cursive;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .experience-content > h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #1D9BF0;
+    text-align: center;
+  }
+  
+.experience-content > h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color:#1D9BF0;
+  }
     }
 @media only screen and (max-width: 768px) {
 .projects {
@@ -80,9 +123,19 @@ html,body
 }
 .experience-details{
     background: black;
-    height: 110px;
-    width: 80%;
+    height: 125px;
+    width: 90%;
+    display: flex;
+    align-items: center;
      }
+
+    .expcard-img > img{
+        width :80px;
+    }
+
+    .experience-content{
+        flex: 1;
+    }
 .lottie-container{
     width: 500px;
     align-items: center;
@@ -102,6 +155,34 @@ html,body
     align-items: center;
     justify-content: center;
 }
+ .experience-content > h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  
+  .experience-content > h3 {
+    font-family: 'Roboto', cursive;
+    font-size: 1.105rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .experience-content > h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #1D9BF0;
+    text-align: center;
+  }
+  
+.experience-content > h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color:#1D9BF0;
+  }
 }
 @media only screen and (max-width: 600px) {
     .projects {
@@ -130,7 +211,7 @@ html,body
     .expirence-box{
         width: 100%;
         margin-top: 60px;
-        transform: translateX(50px);
+        transform: translateX(20px);
     }
     }
 .logo:hover{
@@ -387,25 +468,6 @@ font-size: 25px;
 
 
 
- .experience-details > h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.325rem;
-    font-weight: 600;
-  }
-  .experience-details > h6 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    color: #1D9BF0;
-  }
-  
-.experience-details > h5 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color:#1D9BF0;
-  }
 
 .skill-card{
     margin: 20px;
