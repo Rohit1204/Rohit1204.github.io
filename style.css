@@ -221,6 +221,7 @@ html,body
     }
     .contact-box{
         margin-top: 20px;
+        margin-left: -1px;
     }
     .lottie-container{
         width: 400px;
