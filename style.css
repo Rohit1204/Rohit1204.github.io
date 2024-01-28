@@ -56,6 +56,9 @@ html,body
     .experience-content{
         flex: 1;
     }
+    .achievment{
+        height: 400px;
+    }
     .expcard-img{
         width: 5%;
     }
@@ -71,9 +74,7 @@ html,body
         width: 700px;
         transform: translateX(-200px);
      }
-    .achievment{
-        height: 400px;
-    }
+
     .expirence-box{
         margin-left: 200px !important;
         width: 100%;
@@ -134,9 +135,16 @@ html,body
     margin-left: 45px;
     width: 200px;
 }
+.achievment{
+    height: 350px;
+}
 .contact-box{
     margin-left: 8px;
     margin-top: 30px;
+
+}
+.achievment-box{
+    width: 400px;
 }
 .experience{
     background: rgb(12,11,51,1) ;
@@ -165,9 +173,6 @@ html,body
     align-items: center;
     justify-content: center;
  }
-.achievment{
-    height: 750px;
-}
 .experience-description{
     display: block;
     width: 100%;
@@ -212,12 +217,18 @@ html,body
     .projects {
         height: 1400px;
     }
+    .achievment{
+        height: 400px;
+    }
     .contact-items{
         margin-left: 25px;
         width: 170px;
     }
     .contact{
         height: 300px;
+    }
+    .achievment-box{
+        width: 330px;
     }
     .contact-box{
         margin-top: 20px;
@@ -228,9 +239,7 @@ html,body
         align-items: center;
         justify-content: center;
      }
-    .achievment{
-        height: 750px;
-    }
+    
     .experience{
         background: rgb(12,11,51,1) ;
         background-size: cover;
@@ -700,7 +709,6 @@ font-size: 25px;
     margin-top: 50px;
     display: inline-block;
     position: relative;
-    width: 500px;
     height: 220px;
     background: black;
     opacity: 0.8;
