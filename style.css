@@ -7,10 +7,12 @@ html,body
     color: white;
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
     
 
 
 }
+
 #loader{
     position:fixed;
     width: 100%;
@@ -37,6 +39,14 @@ html,body
     .projects {
         height: 800px;
     }
+    .contact-items{
+        margin-left: 50px;
+        width: 200px;
+    }
+    .contact-box{
+        margin-left: 300px;
+        margin-top: 40px;
+    }
     .long-text {
         transform: translateX(20px);
       }
@@ -59,7 +69,7 @@ html,body
         transform: translateX(-200px);
      }
     .achievment{
-        height: 600px;
+        height: 400px;
     }
     .expirence-box{
         margin-left: 200px !important;
@@ -113,6 +123,14 @@ html,body
 @media only screen and (max-width: 768px) {
 .projects {
     height: 1350px;
+}
+.contact-items{
+    margin-left: 45px;
+    width: 200px;
+}
+.contact-box{
+    margin-left: 8px;
+    margin-top: 30px;
 }
 .experience{
     background: rgb(12,11,51,1) ;
@@ -187,6 +205,13 @@ html,body
 @media only screen and (max-width: 600px) {
     .projects {
         height: 1350px;
+    }
+    .contact-items{
+        margin-left: 25px;
+        width: 170px;
+    }
+    .contact-box{
+        margin-top: 20px;
     }
     .lottie-container{
         width: 400px;
@@ -311,6 +336,7 @@ p .name{
     border-radius: 5px;
     height: 100%;
 }
+
 .skills-box
 {
     position: relative;
@@ -322,6 +348,14 @@ p .name{
     width: 100%;
     border-radius: 5px;
     height: 20%;
+}
+.contact-box{
+    position: relative;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 .skill--box h3{
     font-style: normal;
@@ -428,9 +462,6 @@ font-size: 25px;
   .fa-instagram{
    color: pink;
   }
-  .fa-linkedin{
-    color:#007bb5
-   }
    .fa-github{
     color:#ffffff;
    }
@@ -438,6 +469,10 @@ font-size: 25px;
     color:#008000;
    }
   
+   .contact-items:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+   }
 
 .heading-skill{
     margin-top:24px ;
@@ -452,6 +487,41 @@ font-size: 25px;
     color: teal;
     transition: 0.3s;
 }
+.contact{
+    width: 100%;
+    height: 400px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+.contact-items i{
+    margin: 5px;
+}
+.contact-items i:hover{
+    text-decoration: none;
+}
+.contact-items:hover{
+    text-decoration: none;
+}
+.contact-items span{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+.contact-items span:hover{
+    text-decoration: none;
+}
+.contact-items{
+    background-color: #3b3838;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 18px;
+    font-family: 'Nunito',sans-serif;
+    height: 40px;
+    text-decoration: none;
+}
 
 .skills
 {
@@ -463,14 +533,7 @@ font-size: 25px;
     margin-top: -25px;
     width: 100%;
     height: 400px;
-
-
 }
-
-
-
-
-
 
 .skill-card{
     margin: 20px;
@@ -601,11 +664,13 @@ font-size: 25px;
     overflow: hidden;
 }
 
+
 .projects-box:hover{
     background: teal;
     color: black;
     transition: 0.4s;
 }
+
 .github{
     color: wheat;
     font-size: 25px;
@@ -618,9 +683,7 @@ font-size: 25px;
 
   .achievment
 {
-    background: url(achievment.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: rgb(12,11,51,1);
     width: 100%;
 }
 .achievment-box{
@@ -628,7 +691,7 @@ font-size: 25px;
     margin-top: 50px;
     display: inline-block;
     position: relative;
-    width: 300px;
+    width: 500px;
     height: 220px;
     background: black;
     opacity: 0.8;
