@@ -12,6 +12,30 @@ html,body
 
 
 }
+.achievment-box p{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    text-align: left;
+}
+.achievment-box p:nth-child(2) {
+    animation-delay: 1.5s;
+  }
+  
+  .achievment-box p:nth-child(3) {
+    animation-delay: 2.0s;
+  }
+  
+@keyframes fadeIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    
+  }
 
 #loader{
     position:fixed;
@@ -190,7 +214,7 @@ html,body
     font-weight: 600;
   }
 
-  
+
   .experience-content > h3 {
     font-family: 'Helvetica', cursive;
     font-size: 1.105rem;
