@@ -173,6 +173,7 @@ html,body
 }
 .achievment-box{
     width: 400px;
+    height: 280px;
 }
 .experience{
     background: rgb(12,11,51,1) ;
@@ -258,14 +259,15 @@ html,body
         height: 300px;
     }
     .achievment-box{
-        width: 420px;
+        width: 350px;
+        height: 320px;
     }
     .achievment-box li{
         white-space: initial;
     }
     .contact-box{
         margin-top: 20px;
-        margin-left: -1px;
+        margin-left: -5px;
     }
     .lottie-container{
         width: 400px;
@@ -326,11 +328,11 @@ p .name{
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
-    width: 300px;
+    width: 40vh;
+    height: 45vh;
     border-radius: 50%;
     border: 3px solid #333;
-    z-index: 1
-    ;
+    z-index: 1;
 }
 .main-menu img:hover{
     border: 4px solid teal;
@@ -372,7 +374,7 @@ p .name{
     background-size: cover;
     margin-top: -25px;
     width: 100%;
-    height: 620px;
+    height: 650px;
 
 }
 .box
@@ -742,7 +744,6 @@ font-size: 25px;
     margin-top: 50px;
     display: inline-block;
     position: relative;
-    height: 280px;
     background: black;
     opacity: 0.8;
     padding: 5px;
