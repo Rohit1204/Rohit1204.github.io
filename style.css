@@ -12,34 +12,6 @@ html,body
 
 
 }
-.achievment-box li{
-    overflow: hidden;
-    white-space: nowrap;
-    animation: fadeIn 3s steps(30) ,blink-caret .75s step-end infinite;
-    text-align: left;
-    list-style-type: none;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-.achievment-box li:nth-child(2) {
-    animation-delay: 1.0s;
-  }
-  
-  .achievment-box li:nth-child(3) {
-    animation-delay: 2.0s;
-  }
-  .achievment-box li:nth-child(4) {
-    animation-delay: 2.5s;
-  }
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-@keyframes fadeIn {
-    from { width: 0 }
-    to { width: 100% }
-    
-  }
 
 #loader{
     position:fixed;
@@ -74,8 +46,17 @@ html,body
         margin-left: 50px;
         width: 200px;
     }
+
+    .achievment-items{
+        margin-left: 50px;
+        width: 700px; 
+    }
     .contact-box{
         margin-left: 300px;
+        margin-top: 40px;
+    }
+    .achievment-box{
+        margin-left: 100px;
         margin-top: 40px;
     }
     .long-text {
@@ -163,6 +144,10 @@ html,body
     margin-left: 45px;
     width: 200px;
 }
+.achievment-items{
+    margin-left: 45px;
+    width: 650px;
+}
 .achievment{
     height: 450px;
 }
@@ -172,8 +157,8 @@ html,body
 
 }
 .achievment-box{
-    width: 400px;
-    height: 280px;
+    margin-left: 3px;
+    margin-top: 30px;
 }
 .experience{
     background: rgb(12,11,51,1) ;
@@ -234,9 +219,6 @@ html,body
     color: #1D9BF0;
     text-align: center;
   }
-  .achievment-box li{
-    white-space: initial;
-}
 .experience-content > h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.95rem;
@@ -258,16 +240,13 @@ html,body
     .contact{
         height: 300px;
     }
-    .achievment-box{
-        width: 350px;
-        height: 320px;
-    }
-    .achievment-box li{
-        white-space: initial;
-    }
     .contact-box{
         margin-top: 20px;
         margin-left: -5px;
+    }
+    .achievment-box{
+        margin-top: 20px;
+        margin-left: -15px;
     }
     .lottie-container{
         width: 400px;
@@ -410,6 +389,15 @@ p .name{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+}
+
+.achievment-box{
+    position: relative;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
 }
 .skill--box h3{
     font-style: normal;
@@ -575,6 +563,23 @@ font-size: 25px;
     height: 40px;
     text-decoration: none;
 }
+.achievment-items{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f2f2f2;
+        font-size: 18px;
+        font-family: 'Nunito',sans-serif;
+        height: 40px;
+        text-decoration: none;
+        opacity: 0.8;
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow:5px 5px 10px grey;
+        margin: 10px;
+        overflow: hidden;
+}
 
 .skills
 {
@@ -739,23 +744,7 @@ font-size: 25px;
     background: rgb(12,11,51,1);
     width: 100%;
 }
-.achievment-box{
-    margin: 20px;
-    margin-top: 50px;
-    display: inline-block;
-    position: relative;
-    background: black;
-    opacity: 0.8;
-    padding: 5px;
-    border-radius: 4px;
-    box-shadow:5px 5px 10px grey;
-    overflow: hidden;
-}
-.achievment-box:hover{
-    background: teal;
-    color: black;
-    transition: 0.4s;
-}
+
 Footer{
     background:#212141;
     color: white;
