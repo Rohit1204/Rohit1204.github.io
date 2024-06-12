@@ -66,14 +66,14 @@ html,body
         flex: 1;
     }
     .achievment{
-        height: 450px;
+        height: 350px;
     }
     .expcard-img{
         width: 5%;
     }
     .experience-details{
         background: black;
-        height: 125px;
+        height: 145px;
         width: 70%;
         display: flex;
         align-items: center;
@@ -133,9 +133,15 @@ html,body
     color:#1D9BF0;
   }
     }
+
+@media only screen and (min-width: 1200px) {
+    .projects {
+        height: 550px;
+    }
+}
 @media only screen and (max-width: 768px) {
 .projects {
-    height: 1350px;
+    height: 1480px;
 }
 .contact{
     height: 360px;
@@ -146,10 +152,10 @@ html,body
 }
 .achievment-items{
     margin-left: 45px;
-    width: 650px;
+    width: 600px;
 }
 .achievment{
-    height: 450px;
+    height: 400px;
 }
 .contact-box{
     margin-left: 8px;
@@ -165,7 +171,7 @@ html,body
     background-size: cover;
     margin-top: -25px;
     width: 100%;
-    height: 900px;
+    height: 1080px;
 }
 .experience-details{
     background: black;
@@ -228,10 +234,14 @@ html,body
 }
 @media only screen and (max-width: 600px) {
     .projects {
-        height: 1400px;
+        height: 1500px;
+    }
+    .projects .container{
+        display: grid !important;
+        justify-content: center;
     }
     .achievment{
-        height: 480px;
+        height: 320px;
     }
     .contact-items{
         margin-left: 25px;
@@ -273,6 +283,10 @@ html,body
     }
     .expcard-img > img{
         width :80px;
+    }
+    .achievment-items{
+        width: 430px;
+        height: 250px;
     }
     }
 .logo:hover{
@@ -395,7 +409,6 @@ p .name{
     position: relative;
     height: 300px;
     justify-content: center;
-    align-items: center;
     display: grid;
     grid-template-columns: auto;
 }
@@ -565,19 +578,18 @@ font-size: 25px;
 }
 .achievment-items{
         background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: #f2f2f2;
+        align-items: center;
+        text-align: left;
         font-size: 18px;
+        display: grid;
         font-family: 'Nunito',sans-serif;
-        height: 40px;
+        height: 130px;
         text-decoration: none;
-        opacity: 0.8;
-        padding: 5px;
         border-radius: 4px;
         box-shadow:5px 5px 10px grey;
         margin: 10px;
+        font-weight: bold;
         overflow: hidden;
 }
 
@@ -715,13 +727,17 @@ font-size: 25px;
     display: inline-block;
     position: relative;
     width: 220px;
-    height: 250px;
+    height: 280px;
     background: black;
     padding: 5px;
     box-shadow:5px 5px 10px grey;
     overflow: hidden;
 }
 
+.projects-box .github{
+    position: absolute;
+    bottom: 0;
+}
 
 .projects-box:hover{
     background: teal;
