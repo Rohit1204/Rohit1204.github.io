@@ -50,6 +50,7 @@ html,body
     .achievment-items{
         margin-left: 50px;
         width: 700px; 
+        height: 130px;
     }
     .contact-box{
         margin-left: 300px;
@@ -153,9 +154,10 @@ html,body
 .achievment-items{
     margin-left: 45px;
     width: 600px;
+    height: 130px;
 }
 .achievment{
-    height: 400px;
+    height: 360px;
 }
 .contact-box{
     margin-left: 8px;
@@ -285,8 +287,8 @@ html,body
         width :80px;
     }
     .achievment-items{
-        width: 430px;
-        height: 250px;
+        width: calc(100% - 100px);
+        height: calc(100% - 20px);
     }
     }
 .logo:hover{
@@ -407,9 +409,9 @@ p .name{
 
 .achievment-box{
     position: relative;
-    height: 300px;
     justify-content: center;
     display: grid;
+    place-items: center;
     grid-template-columns: auto;
 }
 .skill--box h3{
@@ -460,6 +462,10 @@ p .name{
     transition: 0.3s;
     color: teal;
 
+}
+dl .personal-info{
+    text-decoration: none !important;
+    color: #f2f2f2;
 }
 dl,dd, ol, ul {
     margin-top: 0;
@@ -584,7 +590,6 @@ font-size: 25px;
         font-size: 18px;
         display: grid;
         font-family: 'Nunito',sans-serif;
-        height: 130px;
         text-decoration: none;
         border-radius: 4px;
         box-shadow:5px 5px 10px grey;
