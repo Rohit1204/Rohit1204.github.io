@@ -472,6 +472,10 @@ dl,dd, ol, ul {
     margin-bottom: 1rem;
     padding-left: 25px;
 }
+.main-title{
+    font-weight: bold;
+    font-size: 120%;
+}
 dd:hover{
 color: teal;
 transition: 0.3s;
