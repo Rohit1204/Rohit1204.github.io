@@ -50,7 +50,7 @@ html,body
     .achievment-items{
         margin-left: 50px;
         width: 700px; 
-        height: 130px;
+        height: 160px;
     }
     .contact-box{
         margin-left: 300px;
@@ -154,7 +154,7 @@ html,body
 .achievment-items{
     margin-left: 45px;
     width: 600px;
-    height: 130px;
+    height: 160px;
 }
 .achievment{
     height: 360px;
@@ -243,7 +243,7 @@ html,body
         justify-content: center;
     }
     .achievment{
-        height: 320px;
+        height: 365px;
     }
     .contact-items{
         margin-left: 25px;
@@ -287,7 +287,7 @@ html,body
         width :80px;
     }
     .achievment-items{
-        width: calc(100% - 100px);
+        width: calc(100% - 25px);
         height: calc(100% - 20px);
     }
     }
