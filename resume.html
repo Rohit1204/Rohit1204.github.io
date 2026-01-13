@@ -1,24 +1,235 @@
-<!-- resume.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Resume</title>
+  <meta name="description" content="Rohit Ahuja - Software Development Engineer Resume | 5+ Years Experience | Full-Stack Developer | DevOps & AI">
+  <meta name="author" content="Rohit Ahuja">
+  <title>Rohit Ahuja - Resume | Software Development Engineer</title>
+  
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      color: #ffffff;
     }
+    
+    .resume-header {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.95) 100%);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(29, 155, 240, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .resume-header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .resume-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .resume-title h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+    
+    .resume-title i {
+      color: #1D9BF0;
+      font-size: 1.5rem;
+    }
+    
+    .resume-actions {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .btn-download, .btn-back {
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid transparent;
+    }
+    
+    .btn-download {
+      background: linear-gradient(135deg, #1D9BF0 0%, #1a8cd8 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(29, 155, 240, 0.3);
+    }
+    
+    .btn-download:hover {
+      background: linear-gradient(135deg, #1a8cd8 0%, #1D9BF0 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(29, 155, 240, 0.4);
+    }
+    
+    .btn-back {
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(29, 155, 240, 0.5);
+      color: #1D9BF0;
+      transform: translateY(-2px);
+    }
+    
+    .resume-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+      height: calc(100vh - 100px);
+    }
+    
+    .resume-iframe-wrapper {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      height: 100%;
+      border: 1px solid rgba(29, 155, 240, 0.2);
+    }
+    
     iframe {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       border: none;
+      display: block;
+    }
+    
+    .resume-info {
+      text-align: center;
+      padding: 15px 20px;
+      background: rgba(26, 26, 26, 0.8);
+      color: #b0b0b0;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .resume-info a {
+      color: #1D9BF0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .resume-info a:hover {
+      color: #ffffff;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .resume-header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .resume-title h1 {
+        font-size: 1.4rem;
+      }
+      
+      .resume-actions {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .btn-download, .btn-back {
+        flex: 1;
+        justify-content: center;
+        min-width: 140px;
+      }
+      
+      .resume-container {
+        padding: 15px;
+        height: calc(100vh - 140px);
+      }
+      
+      .resume-iframe-wrapper {
+        border-radius: 8px;
+      }
+    }
+    
+    @media only screen and (max-width: 576px) {
+      .resume-title h1 {
+        font-size: 1.2rem;
+      }
+      
+      .btn-download, .btn-back {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+      }
+      
+      .resume-container {
+        padding: 10px;
+        height: calc(100vh - 160px);
+      }
     }
   </style>
 </head>
 <body>
-    <iframe src="Rohit Ahuja - Resume 2025.pdf" width="100%" height="100%" style="border: none; height: 100vh;"></iframe>
+  <div class="resume-header">
+    <div class="resume-header-content">
+      <div class="resume-title">
+        <i class="fa fa-file-text"></i>
+        <h1>Rohit Ahuja - Resume</h1>
+      </div>
+      <div class="resume-actions">
+        <a href="Rohit Ahuja - Resume 2025.pdf" download class="btn-download">
+          <i class="fa fa-download"></i>
+          Download PDF
+        </a>
+        <a href="index.html" class="btn-back">
+          <i class="fa fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="resume-container">
+    <div class="resume-iframe-wrapper">
+      <iframe src="Rohit Ahuja - Resume 2025.pdf" type="application/pdf"></iframe>
+    </div>
+  </div>
+  
+  <div class="resume-info">
+    <p>Viewing resume in browser. <a href="Rohit Ahuja - Resume 2025.pdf" download>Download PDF</a> for best experience.</p>
+  </div>
 </body>
 </html>
