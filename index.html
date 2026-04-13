@@ -101,9 +101,14 @@
         "DevOps",
         "AI Integration",
         "MySQL",
+        "PostgreSQL",
         "Git",
         "Terraform",
-        "Jenkins"
+        "Jenkins",
+        "Docker",
+        "OpenAI",
+        "Google Gemini",
+        "LangChain"
       ],
       "alumniOf": {
         "@type": "EducationalOrganization",
@@ -127,8 +132,13 @@
           "JavaScript",
           "AWS",
           "DevOps",
+          "Docker",
           "Full-Stack Development",
-          "AI Integration"
+          "AI Integration",
+          "OpenAI",
+          "Google Gemini",
+          "LangChain",
+          "PostgreSQL"
         ]
       }
     }
@@ -136,41 +146,39 @@
   </head>
   <body>
     <!--div id="loader"></div-->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#home"><h1 class="logo">Rohit Ahuja</h1></a>
-          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+      <nav class="navbar site-header fixed-top navbar-expand-lg navbar-dark" aria-label="Primary">
+        <div class="container navbar-container">
+          <a class="navbar-brand" href="#home"><span class="logo">Rohit Ahuja</span></a>
+          <button class="navbar-toggler site-nav-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Open menu">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
           </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link link" href="#home">HOME</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link link" href="#about">ABOUT</a>
-                </li>
-                      <li class="nav-item">
-                        <a class="nav-link link" href="#experience">EXPERIENCE</a>
-                      </li>
-                <li class="nav-item">
-                        <a class="nav-link link" href="#skills">SKILLS</a>
-                      </li>
-                      <li class="nav-item">
-                            <a class="nav-link link" href="#projects">PROJECTS</a>
-                          </li>
-                <li class="nav-item">
-                  <a class="nav-link link" href="#contact">CONTACT</a>
-                              </li>
-		        <li class="nav-item">
-                            <a class="nav-link link" href="resume.html"
-                            target="_blank" >RESUME</a>
-                          </li>
-
-
-
-              </ul>
-            </div>
-          </nav>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto site-nav-list">
+              <li class="nav-item">
+                <a class="nav-link link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item nav-item--resume">
+                <a class="nav-link link nav-link--resume" href="resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
  <main>
  <section class="row" id='home' aria-label="Home Section">
     <div class="main-menu">
@@ -197,9 +205,9 @@
                 <h2 class="heading-skill"><i class="fa fa-user-circle" aria-hidden="true"></i>  about me</h2>
           </article>
           <article class="col-md-6 col-12">
-              <p>I am <span class="name">Rohit Ahuja</span>, a <b class="main-title">Software Development Engineer</b> with over 5 years of experience designing, building, and operating scalable backend systems in production environments. I have worked across startups and enterprise organizations, taking ownership of critical systems from architecture and development to deployment and operations.
+              <p>I am <span class="name">Rohit Ahuja</span>, a <b class="main-title">Software Development Engineer</b> with over 5 years of experience designing, building, and operating scalable backend systems in production environments. I have worked across startups and enterprise organizations, taking ownership of critical systems from architecture and development to deployment and operations.</p>
               <p>
-My core expertise lies in backend engineering, DevOps, and AI-driven systems, with a current focus on building and operating AI agent-based platforms. I specialize in designing cloud-native architectures, implementing CI/CD pipelines, improving system reliability, and optimizing performance at scale using modern DevOps and automation practices.
+My core expertise lies in backend engineering, DevOps, and AI-driven systems, with a current focus on building and operating AI agent-based platforms. I specialize in designing cloud-native architectures, implementing CI/CD pipelines, improving system reliability, and optimizing performance at scale using modern DevOps and automation practices. I am a HashiCorp Certified Terraform Associate.
 </p>
 
 <p>
@@ -221,10 +229,8 @@ Explore my portfolio to learn more about the systems I’ve built, the challenge
               <div class="link">
                     <a target="_blank" class='fb btn' href="https://www.linkedin.com/in/rohit1204/"><i class="fa fa-linkedin" style="color:#007bb5"></i></a>
                     <a target="_blank" class='fb btn' href="https://github.com/rohit1204"><i class="fa fa-github"></i></a>
-                    <a target="_blank" class='fb btn' href="https://www.hackerrank.com/rohitahuja725"> <span class="iconify" data-icon="simple-icons:hackerrank" data-inline="false"></span></a>
-                                        <a target="_blank" class='fb btn' href="https://www.instagram.com/developer_2.0/"><i class="fa fa-instagram"></i></a>
-
-
+                    <a target="_blank" class='fb btn' href="https://www.hackerrank.com/rohitahuja725"><span class="iconify" data-icon="simple-icons:hackerrank" data-inline="false"></span></a>
+                    <a target="_blank" class='fb btn' href="https://www.instagram.com/developer_2.0/"><i class="fa fa-instagram"></i></a>
               </div>
           </article>
 
@@ -295,90 +301,123 @@ Explore my portfolio to learn more about the systems I’ve built, the challenge
         <h2 class="heading-skill"><i class="fa fa-code" aria-hidden="true"></i> skills</h2>
 </div>
 <div class="container">
-  <Marquee
-  gradient={false}
-  speed={80}
-  behavior="scroll"
-  onmouseover="this.stop();" onmouseout="this.start();"
-  direction="left"
-  width="100%"
-  loop="infinite"
->
-<div class="skill--box">
-  <img src="assests/python.svg" alt="Python" />
-  <div class="centered-item">
-  <h3>Python</h3>
-</div>
-  </div>
-  <div class="skill--box">
-    <img src="assests/aws-icon.svg" alt="AWS" />
-    <div class="centered-item">
-    <h3>AWS</h3>
-  </div>
-    </div>
-    <div class="skill--box">
-      <img src="assests/terraform.svg" alt="Terraform" />
-      <div class="centered-item">
-      <h3>Terraform</h3>
-    </div>
-      </div>
-      <div class="skill--box">
-        <img src="assests/jenkins.svg" alt="Jenkins" />
-        <div class="centered-item">
-        <h3>Jenkins</h3>
-      </div>
+  <div class="skills-categories">
+    <div class="skills-category">
+      <h3 class="skills-category-title">DevOps / Cloud</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/aws-icon.svg" alt="AWS" />
+          <div class="centered-item"><h3>AWS</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/git.svg" alt="Git" />
-          <div class="centered-item">
-          <h3>Git</h3>
+          <img src="assests/terraform.svg" alt="Terraform" />
+          <div class="centered-item"><h3>Terraform</h3></div>
         </div>
-          </div>
-          <div class="skill--box">
-            <img src="assests/react.svg" alt="React" />
-            <div class="centered-item">
-            <h3>React JS</h3>
-          </div>
-          </div>
-          <div class="skill--box">
-            <img src="assests/django.svg" alt="Django" />
-            <div class="centered-item">
-            <h3>Django</h3>
-          </div>
-            </div>
-            <div class="skill--box">
-              <img src="assests/javascript.svg" alt="JavaScript" />
-              <div class="centered-item">
-              <h3>JavaScript</h3>
-            </div>
-              </div>
-              <div class="skill--box">
-                <img src="assests/mysql.svg" alt="MySQL" />
-                <div class="centered-item">
-                <h3>MySQL</h3>
-              </div>
-                </div>
-                <div class="skill--box">
-                  <img src="assests/postman.svg" alt="Postman" />
-                  <div class="centered-item">
-                  <h3>Postman</h3>
-                </div>
-                  </div>
-                  <div class="skill--box">
-                    <img src="assests/html.svg" alt="HTML" />
-                    <div class="centered-item">
-                    <h3>HTML</h3>
-                  </div>
-                    </div>
-                    <div class="skill--box">
-                      <img src="assests/css.svg" alt="CSS" />
-                      <div class="centered-item">
-                      <h3>CSS</h3>
-                    </div>
-                      </div>
+        <div class="skill--box">
+          <img src="assests/docker.svg" alt="Docker" />
+          <div class="centered-item"><h3>Docker</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/jenkins.svg" alt="Jenkins" />
+          <div class="centered-item"><h3>Jenkins</h3></div>
+        </div>
+      </div>
+    </div>
 
-            
-  </Marquee>
+    <div class="skills-category">
+      <h3 class="skills-category-title">AI</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/openai.svg" alt="OpenAI" />
+          <div class="centered-item"><h3>OpenAI</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/gemini.svg" alt="Google Gemini" />
+          <div class="centered-item"><h3>Gemini</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/langchain.svg" alt="LangChain" />
+          <div class="centered-item"><h3>LangChain</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/ai-agents.svg" alt="AI Agents" />
+          <div class="centered-item"><h3>AI Agents</h3></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-category-title">Backend</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/python.svg" alt="Python" />
+          <div class="centered-item"><h3>Python</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/django.svg" alt="Django" />
+          <div class="centered-item"><h3>Django</h3></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-category-title">Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/react.svg" alt="React" />
+          <div class="centered-item"><h3>React</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/nextjs.svg" alt="Next.js" />
+          <div class="centered-item"><h3>Next.js</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/javascript.svg" alt="JavaScript" />
+          <div class="centered-item"><h3>JavaScript</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/html.svg" alt="HTML" />
+          <div class="centered-item"><h3>HTML</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/css.svg" alt="CSS" />
+          <div class="centered-item"><h3>CSS</h3></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-category-title">Databases</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/mysql.svg" alt="MySQL" />
+          <div class="centered-item"><h3>MySQL</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/mongodb.svg" alt="MongoDB" />
+          <div class="centered-item"><h3>MongoDB</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/postgresql.svg" alt="PostgreSQL" />
+          <div class="centered-item"><h3>PostgreSQL</h3></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-category-title">Git &amp; API tooling</h3>
+      <div class="skills-grid">
+        <div class="skill--box">
+          <img src="assests/git.svg" alt="Git" />
+          <div class="centered-item"><h3>Git</h3></div>
+        </div>
+        <div class="skill--box">
+          <img src="assests/postman.svg" alt="Postman" />
+          <div class="centered-item"><h3>Postman</h3></div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- <div class="skill-card c">
     <h2 class="skills-icon">C/C++</h2>
 
@@ -439,6 +478,9 @@ Explore my portfolio to learn more about the systems I’ve built, the challenge
   <div class="achievment-box">
 
   <ul class="achievment-items">
+    <li>
+    HashiCorp Certified Terraform Associate (HCTA0-004)
+  </li>
     <li>
     Got A+ Perfomance rating in Forwood Safety
   </li>

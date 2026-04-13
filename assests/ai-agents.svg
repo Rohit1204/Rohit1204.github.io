@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" role="img" aria-label="AI Agents">
+  <title>AI Agents</title>
+  <defs>
+    <linearGradient id="aiAgentsGrad" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D9BF0"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 12L12 5.25M12 12l6.2 3.2M12 12l-6.2 3.2" stroke="url(#aiAgentsGrad)" stroke-width="1.1" stroke-linecap="round" opacity=".55"/>
+  <circle cx="12" cy="12" r="2.35" fill="url(#aiAgentsGrad)"/>
+  <circle cx="12" cy="5.25" r="1.85" stroke="url(#aiAgentsGrad)" stroke-width="1.35" fill="none"/>
+  <circle cx="18.2" cy="15.2" r="1.85" stroke="url(#aiAgentsGrad)" stroke-width="1.35" fill="none"/>
+  <circle cx="5.8" cy="15.2" r="1.85" stroke="url(#aiAgentsGrad)" stroke-width="1.35" fill="none"/>
+</svg>
