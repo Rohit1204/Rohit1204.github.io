@@ -7,6 +7,13 @@ $(function () {
 
     var $header = $(".site-header");
     function updateNavScrollState() {
+        // Disable the scrolled style on small screens so the navbar
+        // background/shadow stays perfectly constant and nothing below it
+        // can appear to shift as the user scrolls.
+        if ($(window).width() < 992) {
+            $header.removeClass("scrolled");
+            return;
+        }
         if ($(window).scrollTop() > 32) {
             $header.addClass("scrolled");
         } else {
@@ -14,7 +21,7 @@ $(function () {
         }
     }
     updateNavScrollState();
-    $(window).on("scroll", updateNavScrollState);
+    $(window).on("scroll resize", updateNavScrollState);
 
     // scrollspy — offset tuned for fixed header height
     $("body").scrollspy({
