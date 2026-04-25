@@ -2530,6 +2530,20 @@ footer::before {
     display: block;
 }
 
+.skills-grid .skill-fa-icon {
+    color: #1D9BF0;
+    display: block;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 auto !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-grid .skill--box:hover .skill-fa-icon {
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
 .skills-grid .skill--box .centered-item {
     position: absolute;
     left: 0;
@@ -2586,6 +2600,9 @@ footer::before {
     .skills-grid .skill--box > img {
         height: 48px !important;
     }
+    .skills-grid .skill-fa-icon {
+        font-size: 48px;
+    }
     .skills-grid .skill--box .centered-item h3 {
         font-size: 0.9rem;
     }
@@ -2613,6 +2630,9 @@ footer::before {
     .skills-grid .skill--box > img {
         height: 50px !important;
     }
+    .skills-grid .skill-fa-icon {
+        font-size: 50px;
+    }
     .skills-grid .skill--box .centered-item {
         bottom: 14px;
     }
@@ -2636,6 +2656,9 @@ footer::before {
     .skills-grid .skill--box > img {
         height: 44px !important;
     }
+    .skills-grid .skill-fa-icon {
+        font-size: 44px;
+    }
     .skills-grid .skill--box .centered-item h3 {
         font-size: 0.82rem !important;
     }
@@ -2645,6 +2668,16 @@ footer::before {
    which caused layout shift and overflow in grid cells). */
 .skills-grid .skill--box:hover {
     transform: translateY(-4px) !important;
+}
+
+.skills-grid .skill--box.skill--box-text {
+    justify-content: center !important;
+}
+
+.skills-grid .skill--box.skill--box-text .centered-item {
+    position: static !important;
+    transform: none !important;
+    padding: 0 10px !important;
 }
 
 /* =========================================================
