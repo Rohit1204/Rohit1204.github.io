@@ -3074,6 +3074,125 @@ footer::before {
 }
 
 /* =========================================================
+   Writing — featured article card
+   ========================================================= */
+
+.writing {
+    background: linear-gradient(135deg, #0a0a0a 0%, #111827 100%);
+    position: relative;
+    padding-bottom: 55px;
+}
+
+.writing-grid {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 10px;
+}
+
+.writing-card {
+    background:
+        radial-gradient(650px 220px at 20% 0%, rgba(29, 155, 240, 0.2) 0%, rgba(29, 155, 240, 0) 70%),
+        linear-gradient(135deg, rgba(20, 28, 48, 0.95) 0%, rgba(10, 14, 28, 0.95) 100%);
+    border-color: rgba(29, 155, 240, 0.35);
+    min-height: 0;
+    padding-bottom: 30px;
+}
+
+.writing-card::before {
+    opacity: 1;
+}
+
+.writing-badge {
+    color: #ffffff;
+    background: rgba(29, 155, 240, 0.16);
+    border-color: rgba(29, 155, 240, 0.5);
+}
+
+.writing-icon {
+    margin-bottom: 10px;
+}
+
+.writing-meta {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #9fd3ff;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+}
+
+.writing-title {
+    max-width: 760px;
+    font-size: 1.22rem;
+}
+
+.writing-desc {
+    max-width: 780px;
+}
+
+.writing-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.writing-tags span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #dceeff;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(29, 155, 240, 0.12);
+    border: 1px solid rgba(29, 155, 240, 0.25);
+}
+
+.writing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin-top: 18px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 2px;
+    text-decoration: none;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.writing-link:hover,
+.writing-link:focus-visible {
+    color: #9fd3ff;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.writing-link:focus-visible {
+    outline: 2px solid rgba(29, 155, 240, 0.75);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .writing {
+        padding-bottom: 45px;
+    }
+    .writing-grid {
+        margin-top: 22px;
+    }
+    .writing-title {
+        font-size: 1.08rem;
+    }
+    .writing-tags {
+        gap: 7px;
+    }
+}
+
+/* =========================================================
    Contact — highlight the primary CTA (Book a call)
    ========================================================= */
 
@@ -3163,5 +3282,206 @@ footer::before {
     .role-highlights li {
         font-size: 0.85rem;
         line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   Final responsive polish pass
+   ========================================================= */
+
+:root {
+    --section-pad-desktop: 64px;
+    --section-pad-tablet: 48px;
+    --section-pad-phone: 36px;
+    --content-gutter: 20px;
+}
+
+main > section {
+    scroll-margin-top: 84px;
+}
+
+#home.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about,
+.experience,
+.skills,
+.projects,
+.achievment,
+.writing,
+.contact {
+    margin-top: 0 !important;
+}
+
+.about,
+.experience,
+.skills,
+.projects,
+.achievment,
+.contact {
+    padding-top: var(--section-pad-desktop) !important;
+    padding-bottom: var(--section-pad-desktop) !important;
+}
+
+.writing {
+    padding-top: var(--section-pad-desktop) !important;
+    padding-bottom: 56px !important;
+}
+
+.projects .container {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.projects-box {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 260px;
+}
+
+.achievement-card,
+.writing-card,
+.contact-items,
+.projects-box,
+.skills-category,
+.box {
+    -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (max-width: 1199px) {
+    .projects .container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main > section {
+        scroll-margin-top: 76px;
+    }
+    .about,
+    .experience,
+    .skills,
+    .projects,
+    .achievment,
+    .contact {
+        padding-top: var(--section-pad-tablet) !important;
+        padding-bottom: var(--section-pad-tablet) !important;
+    }
+    .writing {
+        padding-top: var(--section-pad-tablet) !important;
+        padding-bottom: var(--section-pad-tablet) !important;
+    }
+    .projects .container,
+    .achievements-grid,
+    .writing-grid,
+    .contact-box {
+        padding-left: var(--content-gutter);
+        padding-right: var(--content-gutter);
+    }
+    .projects-box {
+        min-height: 220px;
+        margin: 0 !important;
+    }
+    .experience {
+        min-height: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    :root {
+        --content-gutter: 16px;
+    }
+    .navbar-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .about,
+    .experience,
+    .skills,
+    .projects,
+    .achievment,
+    .contact {
+        padding-top: var(--section-pad-phone) !important;
+        padding-bottom: var(--section-pad-phone) !important;
+    }
+    .writing {
+        padding-top: var(--section-pad-phone) !important;
+        padding-bottom: var(--section-pad-phone) !important;
+    }
+    .hero-content {
+        padding: 96px 16px 44px;
+    }
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: min(100%, 300px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-btn {
+        box-sizing: border-box;
+        justify-content: center;
+        padding-left: 18px;
+        padding-right: 18px;
+        width: 100%;
+    }
+    .box {
+        max-width: calc(100% - 24px) !important;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        overflow: hidden;
+    }
+    .about .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about [class*="col-"] {
+        min-width: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about p {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        overflow-wrap: anywhere;
+    }
+    .projects .container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .projects-box {
+        min-height: 0;
+        padding: 22px 18px;
+    }
+    .achievement-card,
+    .writing-card {
+        border-radius: 14px;
+        padding: 22px 18px;
+    }
+    .achievement-badge {
+        position: static;
+        align-self: flex-start;
+        margin-bottom: 14px;
+    }
+    .contact-box {
+        gap: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

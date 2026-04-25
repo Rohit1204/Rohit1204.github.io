@@ -1,210 +1,183 @@
-# 🚀 Rohit Ahuja - Portfolio Website
+# Rohit Ahuja Portfolio
 
-<div align="center">
+Personal portfolio website for Rohit Ahuja, Software Development Engineer focused on backend engineering, DevOps, cloud infrastructure, and applied AI systems.
 
-![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
+Live site: [https://rohit1204.github.io](https://rohit1204.github.io)
 
-**A modern, responsive portfolio website showcasing professional experience, skills, and projects**
+## Overview
 
-[🌐 Live Demo](https://rohit1204.github.io) • [📄 Resume](https://rohit1204.github.io/resume.html) • [💼 LinkedIn](https://www.linkedin.com/in/rohit1204)
+This is a static portfolio hosted on GitHub Pages. It is intentionally built with HTML, CSS, and JavaScript so it stays lightweight, fast to deploy, and easy to maintain without a build pipeline.
 
-</div>
+The site highlights professional experience, DevOps and AI skills, achievements, writing, resume links, and contact CTAs for recruiters and engineering teams.
 
----
+## Tech Stack
 
-## 📋 Table of Contents
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- jQuery
+- Font Awesome
+- Iconify
+- Lottie
+- GitHub Pages
 
-- [About](#-about)
-- [Features](#-features)
-- [Technologies Used](#-technologies-used)
-- [Sections](#-sections)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [SEO & Performance](#-seo--performance)
-- [Contact](#-contact)
-- [License](#-license)
+## Site Sections
 
----
+- Home: hero introduction, profile image, social links, and primary CTAs
+- About: professional summary and engineering positioning
+- Experience: timeline-style work history with current-role highlight
+- Skills: categorized DevOps, AI, backend, frontend, database, and tooling skills
+- Projects: selected portfolio projects
+- Achievements: certification, patent, awards, and leadership highlights
+- Writing: Medium article card for technical writing
+- Contact: meeting, email, LinkedIn, WhatsApp, phone, and GitHub links
 
-## 🎯 About
+## Production Folder Structure
 
-This is a professional portfolio website built with HTML, CSS, and JavaScript, showcasing my experience as a **Software Development Engineer** with 5+ years of expertise in full-stack development, DevOps, and AI integration.
+This repository is a GitHub Pages user site, so `index.html` must stay at the repository root.
 
-The website features a modern, responsive design optimized for all devices and includes comprehensive SEO optimization for better visibility.
-
-**Live Website:** [https://rohit1204.github.io](https://rohit1204.github.io)
-
----
-
-## ✨ Features
-
-- 🎨 **Modern & Professional Design** - Clean, elegant UI with smooth animations
-- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop devices
-- ⚡ **Fast Performance** - Lightweight and optimized for quick loading
-- 🔍 **SEO Optimized** - Comprehensive meta tags, Open Graph, and structured data
-- 🌐 **Accessible** - Semantic HTML and ARIA labels for better accessibility
-- 🎭 **Smooth Animations** - Engaging user experience with CSS transitions
-- 📊 **Professional Sections** - Experience, Skills, Projects, and Achievements
-- 🎯 **Easy Navigation** - Intuitive navigation with smooth scrolling
-
----
-
-## 🛠️ Technologies Used
-
-### Frontend
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with gradients, animations, and responsive design
-- **JavaScript** - Interactive functionality and smooth scrolling
-- **Bootstrap** - Responsive grid system and components
-- **Font Awesome** - Icon library
-- **Lottie** - Animation library
-
-### Tools & Libraries
-- **jQuery** - DOM manipulation
-- **AnimateScroll** - Smooth scroll animations
-- **GitHub Pages** - Hosting platform
-
----
-
-## 📑 Sections
-
-The portfolio includes the following sections:
-
-1. **🏠 Home** - Hero section with introduction and profile
-2. **👤 About Me** - Professional summary and personal information
-3. **💼 Experience** - Career history with role progression
-4. **🛠️ Skills** - Technical competencies (DevOps, Python, Full-Stack)
-5. **📁 Projects** - Portfolio of work and projects
-6. **🏆 Achievements** - Awards and recognitions
-7. **📧 Contact** - Contact information and social links
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Git (optional, for cloning the repository)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rohit1204/rohit1204.github.io.git
-   cd rohit1204.github.io
-   ```
-
-2. **Open in browser**
-   - Simply open `index.html` in your web browser
-     ```
-
-### Deployment
-
-This website is automatically deployed on **GitHub Pages**:
-
-1. Push changes to the `main` branch
-2. GitHub Pages will automatically rebuild and deploy
-3. Changes will be live at `https://rohit1204.github.io`
-
----
-
-## 📁 Project Structure
-
-```
-rohit1204.github.io/
-│
-├── index.html              # Main HTML file
-├── resume.html             # Resume page
-├── style.css               # Main stylesheet
-├── README.md               # Project documentation
-│
+```text
+Rohit1204.github.io/
+├── index.html                         # Main GitHub Pages entry file
+├── resume.html                        # HTML resume page
+├── style.css                          # Main stylesheet
+├── README.md                          # Project documentation
+├── resume.pdf                         # Downloadable resume file
+├── Rohit Ahuja - Resume 2025.pdf      # Alternate resume PDF
+├── profile.jpg                        # Hero/profile image
+├── profilepic.jpg                     # Additional profile image
+├── avatar1.jpeg                       # Favicon / app icon
+├── cover.jpg                          # Hero background image
+├── about.png                          # About section background image
+├── skill.jpg                          # Skills/projects supporting image
 ├── css/
-│   └── bootstrap.min.css   # Bootstrap framework
-│
+│   └── bootstrap.min.css              # Local Bootstrap stylesheet
 ├── js/
-│   ├── app.js              # Main JavaScript
-│   ├── animatescroll.min.js
-│   ├── bootstrap.min.js
-│   ├── jquery-3.3.1.slim.min.js
-│   └── popper.min.js
-│
-├── assests/                # Assets directory
-│   ├── *.svg              # Skill icons
-│   ├── *.jpeg             # Company logos
-│   └── Animation-*.json   # Lottie animations
-│
-└── *.jpg, *.jpeg          # Profile and cover images
+│   ├── app.js                         # Site interactions
+│   ├── animatescroll.min.js           # Smooth scroll helper
+│   ├── bootstrap.min.js               # Bootstrap JavaScript
+│   ├── jquery-3.3.1.slim.min.js       # jQuery dependency
+│   └── popper.min.js                  # Bootstrap dependency
+└── assests/                           # Site assets used by existing HTML paths
+    ├── Animation - 1705494121360.json # Lottie animation data
+    ├── natwest.jpeg                   # Company logo
+    ├── bondsindia.svg                 # Company logo
+    ├── forwood.svg                    # Company logo
+    ├── aws-icon.svg                   # Skill icon
+    ├── terraform.svg                  # Skill icon
+    ├── docker.svg                     # Skill icon
+    ├── jenkins.svg                    # Skill icon
+    ├── openai.svg                     # Skill icon
+    ├── gemini.svg                     # Skill icon
+    ├── langchain.svg                  # Skill icon
+    ├── ai-agents.svg                  # Skill icon
+    ├── python.svg                     # Skill icon
+    ├── django.svg                     # Skill icon
+    ├── react.svg                      # Skill icon
+    ├── nextjs.svg                     # Skill icon
+    ├── javascript.svg                 # Skill icon
+    ├── html.svg                       # Skill icon
+    ├── css.svg                        # Skill icon
+    ├── mysql.svg                      # Skill icon
+    ├── mongodb.svg                    # Skill icon
+    ├── postgresql.svg                 # Skill icon
+    ├── git.svg                        # Skill icon
+    └── postman.svg                    # Skill icon
 ```
 
----
+Important: the folder is currently named `assests/` in the code. Do not rename it to `assets/` unless every reference in `index.html` and `style.css` is updated at the same time.
 
-## 🔍 SEO & Performance
+## GitHub Pages Notes
 
-### SEO Features
-- ✅ Comprehensive meta tags
-- ✅ Open Graph tags for social sharing
-- ✅ Twitter Card integration
-- ✅ Structured data (JSON-LD) for rich snippets
-- ✅ Semantic HTML5 elements
-- ✅ Canonical URLs
-- ✅ Alt text for all images
+This repository is configured as a GitHub Pages user site:
 
-### Performance Optimizations
-- ✅ Optimized images
-- ✅ Minified CSS and JavaScript
-- ✅ Efficient CSS animations
-- ✅ Lazy loading where applicable
+- Repository name should remain `Rohit1204.github.io`.
+- `index.html` should remain in the repository root.
+- Root-level assets such as `style.css`, `profile.jpg`, `cover.jpg`, and `resume.html` should not be moved unless their references are updated.
+- File names are case-sensitive after deployment, so keep image and asset paths exactly as referenced in the HTML/CSS.
+- CSS and JS cache busting is handled with query strings such as `style.css?v=...` and `js/app.js?v=...`.
 
----
+## Local Development
 
-## 📊 Key Highlights
+Clone the repository:
 
-- **5+ Years** of professional experience
-- **DevOps & AI** specialization at NatWest
-- **Technical Lead** experience at Forwood Safety
-- **Full-Stack Development** expertise
-- **AWS, Terraform, Jenkins** proficiency
-- **Python & Django** backend development
+```bash
+git clone https://github.com/rohit1204/Rohit1204.github.io.git
+cd Rohit1204.github.io
+```
 
----
+Run a local static server:
 
-## 📧 Contact
+```bash
+python3 -m http.server 8000
+```
 
-**Rohit Ahuja**  
+Open:
+
+```text
+http://localhost:8000
+```
+
+You can also open `index.html` directly in a browser, but using a local server more closely matches production behavior.
+
+## Deployment
+
+GitHub Pages deploys the site directly from the repository.
+
+1. Commit changes to the default branch.
+2. Push to GitHub.
+3. GitHub Pages serves the updated site at [https://rohit1204.github.io](https://rohit1204.github.io).
+
+No build command is required.
+
+## SEO and Accessibility
+
+The portfolio includes:
+
+- SEO title, description, and keywords
+- Open Graph metadata
+- Twitter Card metadata
+- JSON-LD structured data
+- Semantic section labels
+- ARIA labels for important links
+- Responsive layouts for mobile, tablet, and desktop
+- Color contrast improvements for better readability
+
+## Content Highlights
+
+- 5+ years of professional software engineering experience
+- Backend, DevOps, cloud, and applied AI positioning
+- NatWest DevOps and AI engineering work
+- MongoDB Atlas infrastructure ownership
+- AWS ECS, Terraform, GitLab CI/CD, and auto-scaling experience
+- OpenAI, Google Gemini, LangChain, and AI agent platform experience
+- Medium technical writing section
+- Patent, Terraform certification, and performance awards
+
+## Maintenance Checklist
+
+Before publishing changes:
+
+- Verify the site locally with `python3 -m http.server 8000`.
+- Check mobile navbar behavior.
+- Confirm internal anchor links still work.
+- Confirm `resume.html` and PDF resume links still open.
+- Confirm image paths load correctly on a case-sensitive host.
+- Bump CSS/JS query-string versions after visual changes.
+- Avoid moving root files unless GitHub Pages paths are updated.
+
+## Contact
+
+Rohit Ahuja  
 Software Development Engineer
 
-- 📧 Email: [rohitahuja725@gmail.com](mailto:rohitahuja725@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/rohit1204](https://www.linkedin.com/in/rohit1204)
-- 🐙 GitHub: [github.com/rohit1204](https://github.com/rohit1204)
-- 📱 Phone: +91-8053185860
-- 📍 Location: Gurugram, India
+- Website: [https://rohit1204.github.io](https://rohit1204.github.io)
+- LinkedIn: [linkedin.com/in/rohit1204](https://www.linkedin.com/in/rohit1204)
+- GitHub: [github.com/Rohit1204](https://github.com/Rohit1204)
+- Medium: [medium.com/@rohitahuja725](https://medium.com/@rohitahuja725)
+- Email: [rohitahuja725@gmail.com](mailto:rohitahuja725@gmail.com)
 
----
+## License
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgments
-
-- Design inspiration from modern portfolio websites
-- Icons by [Font Awesome](https://fontawesome.com)
-- Animations by [Lottie](https://lottiefiles.com)
-- Hosted on [GitHub Pages](https://pages.github.com)
-
----
-
-<div align="center">
-
-**⭐ If you find this portfolio helpful, please consider giving it a star!**
-
-Made with ❤️ by [Rohit Ahuja](https://github.com/rohit1204)
-
-</div>
+This is a personal portfolio project. Add a `LICENSE` file before reusing or distributing the code as an open-source template.
