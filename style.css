@@ -3318,6 +3318,12 @@ footer::before {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .lottie-container {
+        display: none;
+    }
+}
+
 /* =========================================================
    Final responsive polish pass
    ========================================================= */

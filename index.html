@@ -607,20 +607,18 @@
       // Update current year in footer
       document.getElementById('current-year').textContent = new Date().getFullYear();
       
-      // Replace 'your-animation.json' with the path to your JSON file
-      const animationPath = 'https://lottie.host/06ebabac-3a4f-46cb-9e2b-44132b7f152d/KLxfYtjw29.json';
-    
-      // Replace 'lottie-container' with the ID of your container element
+      const animationPath = 'assests/experience-lottie.json';
       const container = document.getElementById('lottie-container');
-    
-      // Load the Lottie animation
-      lottie.loadAnimation({
-        container: container,
-        renderer: 'svg', // Use 'svg' or 'canvas' based on your preference
-        loop: true, // Set to true for looping
-        autoplay: true, // Set to true for autoplay
-        path: animationPath // Path to your JSON file
-      });
+
+      if (container && window.lottie) {
+        lottie.loadAnimation({
+          container: container,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: animationPath
+        });
+      }
     </script>
     <!--script>
         var preloader=document.getElementById('loader');

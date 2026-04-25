@@ -60,7 +60,7 @@ Rohit1204.github.io/
 │   ├── jquery-3.3.1.slim.min.js       # jQuery dependency
 │   └── popper.min.js                  # Bootstrap dependency
 └── assests/                           # Site assets used by existing HTML paths
-    ├── Animation - 1705494121360.json # Lottie animation data
+    ├── experience-lottie.json          # Experience section Lottie animation data
     ├── natwest.jpeg                   # Company logo
     ├── bondsindia.svg                 # Company logo
     ├── forwood.svg                    # Company logo
