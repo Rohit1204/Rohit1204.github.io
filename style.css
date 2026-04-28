@@ -2292,6 +2292,25 @@ marquee {
     flex-grow: 1;
 }
 
+.project-case-study {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.project-case-study p {
+    flex-grow: 0;
+    margin-bottom: 12px;
+}
+
+.project-case-study p:last-child {
+    margin-bottom: 0;
+}
+
+.project-case-study b {
+    color: #1D9BF0;
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 768px) {
     .projects {
         padding: 30px 0 10px 0;
@@ -3376,10 +3395,17 @@ main > section {
     align-items: stretch;
 }
 
+.projects {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible;
+}
+
 .projects-box {
     width: 100% !important;
     min-width: 0 !important;
     max-width: none !important;
+    height: auto !important;
     min-height: 260px;
 }
 
