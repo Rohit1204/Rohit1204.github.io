@@ -2371,7 +2371,7 @@ marquee {
         margin-bottom: 15px;
         line-height: 1.5;
     }
-    .projects-box .github {
+    .project-links {
         margin-top: auto;
         padding-top: 15px;
     }
@@ -2384,15 +2384,48 @@ marquee {
     }
 }
 
-.projects-box .github{
+.project-links {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 14px;
     width: 100%;
     margin-top: auto;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-live {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(29, 155, 240, 0.55);
+    color: #e8f4fc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    background: rgba(29, 155, 240, 0.12);
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.project-live:hover,
+.project-live:focus-visible {
+    background: rgba(29, 155, 240, 0.28);
+    border-color: rgba(29, 155, 240, 0.95);
+    color: #ffffff;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.project-live:focus-visible {
+    outline: 2px solid rgba(29, 155, 240, 0.75);
+    outline-offset: 3px;
 }
 
 .projects-box:hover{
