@@ -101,7 +101,7 @@
         "DevOps",
         "AI Integration",
         "MySQL",
-        "PostgreSQL",
+        "Amazon Aurora PostgreSQL",
         "Git",
         "Terraform",
         "Jenkins",
@@ -138,7 +138,7 @@
           "OpenAI",
           "Google Gemini",
           "LangChain",
-          "PostgreSQL"
+          "Amazon Aurora PostgreSQL"
         ]
       }
     }
@@ -218,7 +218,7 @@
                 <h2 class="heading-skill"><i class="fa fa-user-circle" aria-hidden="true"></i>  about me</h2>
           </article>
           <article class="col-md-6 col-12">
-              <p><b class="main-title">Software Development Engineer</b> with <span class="name">5+ years</span> of hands-on experience building and operating production backend and cloud systems at both startups (Launchpad Fintech, Forwood Safety) and enterprises (NatWest). At NatWest, I own the team's <b>MongoDB Atlas infrastructure</b> and built the <b>AI agent platform</b> on <b>AWS ECS</b> with <b>GitLab CI/CD and Terraform</b> &mdash; shipping production agents (including a <b>Product Requirement System</b> and a <b>Source of Fund</b> agent) powered by <b>OpenAI and Google Gemini</b>, and cutting AWS spend by <b>~$10,000</b> through ECS auto-scaling.</p>
+              <p><b class="main-title">Software Development Engineer</b> with <span class="name">5+ years</span> of hands-on experience building and operating production backend and cloud systems at both startups (Launchpad Fintech, Forwood Safety) and enterprises (NatWest). At NatWest, I own the team's <b>MongoDB Atlas</b> and <b>Amazon Aurora PostgreSQL</b> infrastructure, standardized through reusable <b>Terraform modules</b> from a <b>private module registry</b>, and built the <b>AI agent platform</b> on <b>AWS ECS</b> with <b>GitLab CI/CD and Terraform</b> &mdash; shipping production banking agents (including <b>agent coaching and request workflows</b>, <b>product requirements intake</b>, and <b>source of funds verification</b>) powered by <b>OpenAI and Google Gemini</b>, and cutting AWS spend by <b>~$10,000</b> through ECS auto-scaling.</p>
 
               <p>My sweet spot sits at the intersection of <b>backend engineering, DevOps, and applied AI</b> &mdash; designing cloud-native services on <b>AWS</b>, authoring infrastructure as code with <b>Terraform</b> (HashiCorp Certified Terraform Associate), wiring up CI/CD in <b>GitLab and Jenkins</b>, and making systems observable, resilient, and cost-aware. I've taken services from whiteboard to production &mdash; and been the person on-call when they broke.</p>
 
@@ -262,10 +262,10 @@
             <h5>NatWest</h5>
             <h3 class="role-location">Gurugram, India</h3>
             <ul class="role-highlights">
-              <li>Set up and own the team's <b>MongoDB Atlas</b> infrastructure end-to-end.</li>
+              <li>Set up and own the team's <b>MongoDB Atlas</b> and <b>Amazon Aurora PostgreSQL</b> infrastructure end-to-end, including reusable <b>Terraform modules</b> published to a <b>private module registry</b> for consistent provisioning across environments.</li>
               <li>Built the <b>AI agent platform</b> on <b>AWS ECS</b>, orchestrated with <b>Terraform</b> and <b>GitLab CI/CD</b>.</li>
-              <li>Co-designed the <b>Product Requirement System</b> agent with the team and built it end-to-end as the <b>sole developer</b> &mdash; Python, <b>OpenAI + Gemini</b>, LangChain.</li>
-              <li>Co-designed the <b>Source of Fund</b> agent with the team and built it end-to-end as the <b>sole developer</b> &mdash; Python, <b>OpenAI</b>, for banking workflows.</li>
+              <li>In <b>April 2026</b>, owned a production release that shipped <b>three major agents</b> plus an update to a <b>Python</b> backend service that connects to <b>MongoDB</b> and exposes persistence through <b>API endpoints</b>, coordinating <b>GitLab CI/CD</b> promotion, rollout validation, health checks, and post-release monitoring.</li>
+              <li>Co-designed multiple production <b>banking workflow agents</b> (including <b>agent coaching and request flows</b>, <b>product requirements intake</b>, and <b>source of funds verification</b>) &mdash; Python, <b>OpenAI + Gemini</b>, LangChain, with end-to-end ownership on key agent deliveries.</li>
               <li>Implemented <b>ECS auto-scaling</b> that cut AWS spend by <b>~$10,000</b>.</li>
             </ul>
           </div>
@@ -422,8 +422,8 @@
           <div class="centered-item"><h3>MongoDB</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/postgresql.svg" alt="PostgreSQL" />
-          <div class="centered-item"><h3>PostgreSQL</h3></div>
+          <img src="assests/postgresql.svg" alt="Aurora PostgreSQL" />
+          <div class="centered-item"><h3>Aurora PostgreSQL</h3></div>
         </div>
       </div>
     </div>
@@ -484,11 +484,14 @@
 </div>
 </div>
 <div class="projects-box">
-    <h2>E-Commerce Web App</h2>
-    <p>An e-commerce web application inspired by Flipkart, with user registration, login, and shopping workflows.</p>
-    
+    <h2>ShopHub · E-Commerce</h2>
+    <div class="project-case-study">
+      <p><b>Problem:</b> Most e-commerce demos keep catalog and checkout glued to server-rendered pages, so there is no stable contract for a separate storefront, checkout is unsafe on network retries or double-submits, and session-style auth breaks down once the UI and API run on different origins.</p>
+      <p><b>Tech:</b> Next.js 15 (App Router, TypeScript, Tailwind) storefront; Django 5 and Django REST Framework API; JWT auth; idempotent checkout; OpenAPI via drf-spectacular; optional Paytm handoff; SQLite by default with a PostgreSQL-ready path; backend and frontend tests.</p>
+      <p><b>Result:</b> End-to-end flow from catalog and cart through signup, login, checkout, and order tracking, plus staff catalog APIs and architecture notes for split deploy (API vs storefront).</p>
+    </div>
     <div class="project-links">
-    <a target="_blank" rel="noopener noreferrer" class="github" href="https://github.com/Rohit1204/my-ecommerce-app" aria-label="E-Commerce Web App on GitHub"><i class="fa fa-code" aria-hidden="true"></i></a>
+    <a target="_blank" rel="noopener noreferrer" class="github" href="https://github.com/Rohit1204/my-ecommerce-app" aria-label="ShopHub e-commerce on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
     </div>
     </div>
 <div class="projects-box">
