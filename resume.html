@@ -3,233 +3,385 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Rohit Ahuja - Software Development Engineer Resume | 5+ Years Experience | Full-Stack Developer | DevOps & AI">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="description" content="Rohit Ahuja - Senior Software Engineer resume. 5+ years in backend, cloud and AI at NatWest, Forwood Safety and Launchpad Fintech.">
   <meta name="author" content="Rohit Ahuja">
-  <title>Rohit Ahuja - Resume | Software Development Engineer</title>
-  
-  <!-- Font Awesome -->
+  <title>Resume &mdash; Rohit Ahuja</title>
+
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      --bg:            #0a0b0d;
+      --bg-raised:     #101217;
+      --surface:       #121419;
+      --surface-hover: #171a20;
+      --border:        rgba(255, 255, 255, 0.08);
+      --border-hover:  rgba(255, 255, 255, 0.16);
+      --text:          #e9ebee;
+      --text-muted:    #9aa2ab;
+      --text-dim:      #6e767f;
+      --accent:        #4c9ffb;
+      --accent-text:   #7fbaff;
+      --accent-soft:   rgba(76, 159, 251, 0.10);
+      --accent-line:   rgba(76, 159, 251, 0.35);
+      --radius:        12px;
+      --radius-lg:     16px;
+      --gutter:        20px;
+      --ease:          cubic-bezier(0.4, 0, 0.2, 1);
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              'Helvetica Neue', Arial, sans-serif;
     }
-    
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-      color: #ffffff;
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* No height:100% anywhere — that plus a calc(100vh) container is what
+       locked this page and stopped it scrolling on phones. */
+    html {
+      -webkit-text-size-adjust: 100%;
     }
-    
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; height: auto; }
+
+    a { color: var(--accent-text); text-decoration: none; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* ---------- header ---------- */
+
     .resume-header {
-      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.95) 100%);
-      backdrop-filter: blur(10px);
-      padding: 20px 0;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      border-bottom: 1px solid rgba(29, 155, 240, 0.2);
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 20;
+      padding: 14px 0;
+      background: rgba(10, 11, 13, 0.94);
+      border-bottom: 1px solid var(--border);
     }
-    
+
     .resume-header-content {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 12px;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 var(--gutter);
     }
-    
+
     .resume-title {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 12px;
+      min-width: 0;
     }
-    
-    .resume-title h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: 0.5px;
-      margin: 0;
-    }
-    
+
     .resume-title i {
-      color: #1D9BF0;
-      font-size: 1.5rem;
-    }
-    
-    .resume-actions {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    
-    .btn-download, .btn-back {
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
+      flex: none;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      border: 2px solid transparent;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      font-size: 0.95rem;
+      color: var(--accent-text);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-line);
+      border-radius: 10px;
     }
-    
-    .btn-download {
-      background: linear-gradient(135deg, #1D9BF0 0%, #1a8cd8 100%);
-      color: #ffffff;
-      box-shadow: 0 4px 15px rgba(29, 155, 240, 0.3);
+
+    .resume-title h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      white-space: nowrap;
     }
-    
-    .btn-download:hover {
-      background: linear-gradient(135deg, #1a8cd8 0%, #1D9BF0 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(29, 155, 240, 0.4);
+
+    .resume-title span {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--text-dim);
+      white-space: nowrap;
     }
-    
+
+    .resume-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-download,
     .btn-back {
-      background: transparent;
-      color: #ffffff;
-      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1;
+      white-space: nowrap;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background 0.2s var(--ease), border-color 0.2s var(--ease), color 0.2s var(--ease);
     }
-    
-    .btn-back:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(29, 155, 240, 0.5);
-      color: #1D9BF0;
-      transform: translateY(-2px);
+
+    .btn-download {
+      color: #07090c;
+      background: var(--text);
     }
-    
-    .resume-container {
-      max-width: 1400px;
+
+    .btn-download:hover,
+    .btn-download:focus-visible {
+      color: #07090c;
+      background: #fff;
+    }
+
+    .btn-back {
+      color: var(--text);
+      border-color: var(--border-hover);
+    }
+
+    .btn-back:hover,
+    .btn-back:focus-visible {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    /* ---------- viewer (wide screens only) ---------- */
+
+    .resume-main {
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 20px;
-      height: calc(100vh - 100px);
+      padding: 20px var(--gutter) 40px;
     }
-    
-    .resume-iframe-wrapper {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    .resume-viewer {
+      display: none;
+      height: min(1180px, calc(100vh - 150px));
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
       overflow: hidden;
-      height: 100%;
-      border: 1px solid rgba(29, 155, 240, 0.2);
     }
-    
-    iframe {
+
+    .resume-viewer iframe {
+      display: block;
       width: 100%;
       height: 100%;
       border: none;
-      display: block;
     }
-    
-    .resume-info {
+
+    /* ---------- small-screen panel ---------- */
+
+    .resume-card {
+      padding: 26px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
       text-align: center;
-      padding: 15px 20px;
-      background: rgba(26, 26, 26, 0.8);
-      color: #b0b0b0;
-      font-size: 0.9rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
-    .resume-info a {
-      color: #1D9BF0;
-      text-decoration: none;
-      transition: color 0.3s ease;
+
+    .resume-card .doc-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      margin-bottom: 16px;
+      font-size: 1.3rem;
+      color: var(--accent-text);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-line);
+      border-radius: 14px;
     }
-    
-    .resume-info a:hover {
-      color: #ffffff;
+
+    .resume-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
     }
-    
-    @media only screen and (max-width: 768px) {
+
+    .resume-card p {
+      max-width: 42ch;
+      margin: 0 auto 20px;
+      font-size: 0.93rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
+    .resume-card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .resume-facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .resume-fact strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .resume-fact span {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.74rem;
+      line-height: 1.4;
+      color: var(--text-dim);
+    }
+
+    .resume-note {
+      margin: 18px auto 0;
+      max-width: 52ch;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+      text-align: center;
+    }
+
+    /* The iframe viewer only works reliably on a real pointer device with a
+       built-in PDF plugin. Below that, show the download panel instead. */
+    @media (min-width: 900px) {
+      .resume-viewer { display: block; }
+      .resume-card   { display: none; }
+      .resume-title h1 { font-size: 1.15rem; }
+    }
+
+    @media (max-width: 520px) {
+      :root { --gutter: 16px; }
       .resume-header-content {
-        flex-direction: column;
+        justify-content: center;
         text-align: center;
       }
-      
-      .resume-title h1 {
-        font-size: 1.4rem;
-      }
-      
       .resume-actions {
         width: 100%;
         justify-content: center;
       }
-      
-      .btn-download, .btn-back {
-        flex: 1;
-        justify-content: center;
-        min-width: 140px;
+      .btn-download,
+      .btn-back {
+        flex: 1 1 auto;
+        min-width: 0;
       }
-      
-      .resume-container {
-        padding: 15px;
-        height: calc(100vh - 140px);
+      .resume-facts {
+        grid-template-columns: 1fr;
+        gap: 12px;
       }
-      
-      .resume-iframe-wrapper {
-        border-radius: 8px;
+      .resume-fact {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
       }
+      .resume-fact span { margin-top: 0; }
     }
-    
-    @media only screen and (max-width: 576px) {
-      .resume-title h1 {
-        font-size: 1.2rem;
-      }
-      
-      .btn-download, .btn-back {
-        padding: 10px 18px;
-        font-size: 0.85rem;
-      }
-      
-      .resume-container {
-        padding: 10px;
-        height: calc(100vh - 160px);
-      }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; }
     }
   </style>
 </head>
 <body>
-  <div class="resume-header">
+
+  <header class="resume-header">
     <div class="resume-header-content">
       <div class="resume-title">
-        <i class="fa fa-file-text"></i>
-        <h1>Rohit Ahuja - Resume</h1>
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+        <h1>Rohit Ahuja <span>Senior Software Engineer &middot; Resume</span></h1>
       </div>
       <div class="resume-actions">
-        <a href="Rohit Ahuja - Resume 2026.pdf" download class="btn-download">
-          <i class="fa fa-download"></i>
-          Download PDF
+        <a href="Rohit%20Ahuja%20-%20Resume%202026.pdf" download class="btn-download">
+          <i class="fa fa-download" aria-hidden="true"></i> Download PDF
         </a>
         <a href="index.html" class="btn-back">
-          <i class="fa fa-arrow-left"></i>
-          Back to Portfolio
+          <i class="fa fa-arrow-left" aria-hidden="true"></i> Portfolio
         </a>
       </div>
     </div>
-  </div>
-  
-  <div class="resume-container">
-    <div class="resume-iframe-wrapper">
-      <iframe src="Rohit Ahuja - Resume 2026.pdf" type="application/pdf"></iframe>
+  </header>
+
+  <main class="resume-main">
+
+    <div class="resume-viewer">
+      <iframe src="Rohit%20Ahuja%20-%20Resume%202026.pdf" title="Rohit Ahuja resume, PDF"></iframe>
     </div>
-  </div>
-  
-  <div class="resume-info">
-    <p>Viewing resume in browser. <a href="Rohit Ahuja - Resume 2026.pdf" download>Download PDF</a> for best experience.</p>
-  </div>
+
+    <div class="resume-card">
+      <div class="doc-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+      <h2>Open the resume</h2>
+      <p>
+        Phone browsers can&rsquo;t scroll an embedded PDF reliably, so open it in your
+        device&rsquo;s own viewer &mdash; it&rsquo;ll be sharper and easier to read.
+      </p>
+      <div class="resume-card-actions">
+        <a href="Rohit%20Ahuja%20-%20Resume%202026.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+          <i class="fa fa-external-link" aria-hidden="true"></i> Open resume
+        </a>
+        <a href="Rohit%20Ahuja%20-%20Resume%202026.pdf" download class="btn-back">
+          <i class="fa fa-download" aria-hidden="true"></i> Download PDF
+        </a>
+      </div>
+
+      <div class="resume-facts">
+        <div class="resume-fact">
+          <strong>5+ yrs</strong>
+          <span>Backend, cloud &amp; AI in production</span>
+        </div>
+        <div class="resume-fact">
+          <strong>NatWest</strong>
+          <span>Senior Software Engineer, DevOps &amp; AI</span>
+        </div>
+        <div class="resume-fact">
+          <strong>3 certs</strong>
+          <span>HashiCorp, Claude, AWS</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="resume-note">
+      Prefer the full story? The <a href="index.html">portfolio</a> covers the same work
+      with project write-ups and context.
+    </p>
+
+  </main>
+
 </body>
 </html>

@@ -61,8 +61,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css?v=20260916b">
-    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=20260917i">
+    <script defer src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <title>Rohit Ahuja - Senior Software Engineer | DevOps &amp; AI Agents | AWS &amp; Terraform | 5+ Years</title>
     
     <!-- Structured Data (JSON-LD) -->
@@ -176,6 +176,13 @@
     </script>
   </head>
   <body>
+      <script>
+        // Start at the top on refresh. Setting this flag is enough — the browser
+        // simply skips restoring the old offset. Never scrollTo() on load: that
+        // fires after images finish and yanks users who already started reading.
+        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+      </script>
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
       <nav class="navbar site-header fixed-top navbar-expand-lg navbar-dark" aria-label="Primary">
         <div class="container navbar-container">
           <a class="navbar-brand" href="#home"><span class="logo">Rohit Ahuja</span></a>
@@ -212,13 +219,24 @@
           </div>
         </div>
       </nav>
+      <nav class="section-chips" id="sectionChips" aria-label="Jump to section">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievment">Achievements</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
  <main>
  <section class="row" id='home' aria-label="Home Section">
     <div class="main-menu">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="profile-image-container">
-                <img src="profile.jpg" alt="Rohit Ahuja - Senior Software Engineer with 5+ years of experience" class="profile-image">
+                <img fetchpriority="high" decoding="async" src="profile.jpg" alt="Rohit Ahuja - Senior Software Engineer with 5+ years of experience" class="profile-image">
             </div>
             <div class="hero-text">
                 <h1 class="hero-name">Rohit Ahuja</h1>
@@ -318,7 +336,7 @@
         <div class="expirence-box">
         <div class="experience-details experience-details--current">
           <div class="expcard-img" >
-            <img src="assests/natwest.jpeg"  alt="NatWest Logo - Senior Software Engineer at NatWest"/>
+            <img loading="lazy" decoding="async" src="assests/natwest.jpeg"  alt="NatWest Logo - Senior Software Engineer at NatWest"/>
         </div>
           <div class="experience-content">
             <h6>Nov 2025 &ndash; Present <span class="role-badge role-badge--current" aria-label="Current role">Current</span></h6>
@@ -340,7 +358,7 @@
 
         <div class="experience-details">
           <div class="expcard-img" >
-            <img src="assests/forwood.svg"  alt="Forwood Safety Logo - Technical Lead at Forwood Safety"/>
+            <img loading="lazy" decoding="async" src="assests/forwood.svg"  alt="Forwood Safety Logo - Technical Lead at Forwood Safety"/>
         </div>
           <div class="experience-content">
             <h6>Oct 2022 &ndash; Nov 2025</h6>
@@ -370,7 +388,7 @@
 
       <div class="experience-details">
         <div class="expcard-img" >
-          <img src="assests/bondsindia.svg"  alt="Launchpad Fintech Logo - Full-Stack Developer at Launchpad Fintech"/>
+          <img loading="lazy" decoding="async" src="assests/bondsindia.svg"  alt="Launchpad Fintech Logo - Full-Stack Developer at Launchpad Fintech"/>
       </div>
       <div class="experience-content">
           <h6>Jan 2021 &ndash; Oct 2022</h6>
@@ -400,19 +418,19 @@
       <h3 class="skills-category-title">DevOps / Cloud</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/aws-icon.svg" alt="AWS" />
+          <img loading="lazy" decoding="async" src="assests/aws-icon.svg" alt="AWS" />
           <div class="centered-item"><h3>AWS</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/terraform.svg" alt="Terraform" />
+          <img loading="lazy" decoding="async" src="assests/terraform.svg" alt="Terraform" />
           <div class="centered-item"><h3>Terraform</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/docker.svg" alt="Docker" />
+          <img loading="lazy" decoding="async" src="assests/docker.svg" alt="Docker" />
           <div class="centered-item"><h3>Docker</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/jenkins.svg" alt="Jenkins" />
+          <img loading="lazy" decoding="async" src="assests/jenkins.svg" alt="Jenkins" />
           <div class="centered-item"><h3>Jenkins</h3></div>
         </div>
         <div class="skill--box skill--box-icon">
@@ -426,19 +444,19 @@
       <h3 class="skills-category-title">AI</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/openai.svg" alt="OpenAI" />
+          <img loading="lazy" decoding="async" src="assests/openai.svg" alt="OpenAI" />
           <div class="centered-item"><h3>OpenAI</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/gemini.svg" alt="Google Gemini" />
+          <img loading="lazy" decoding="async" src="assests/gemini.svg" alt="Google Gemini" />
           <div class="centered-item"><h3>Gemini</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/langchain.svg" alt="LangChain" />
+          <img loading="lazy" decoding="async" src="assests/langchain.svg" alt="LangChain" />
           <div class="centered-item"><h3>LangChain</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/ai-agents.svg" alt="AI Agents" />
+          <img loading="lazy" decoding="async" src="assests/ai-agents.svg" alt="AI Agents" />
           <div class="centered-item"><h3>AI Agents</h3></div>
         </div>
       </div>
@@ -448,11 +466,11 @@
       <h3 class="skills-category-title">Backend</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/python.svg" alt="Python" />
+          <img loading="lazy" decoding="async" src="assests/python.svg" alt="Python" />
           <div class="centered-item"><h3>Python</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/django.svg" alt="Django" />
+          <img loading="lazy" decoding="async" src="assests/django.svg" alt="Django" />
           <div class="centered-item"><h3>Django</h3></div>
         </div>
       </div>
@@ -462,23 +480,23 @@
       <h3 class="skills-category-title">Frontend</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/react.svg" alt="React" />
+          <img loading="lazy" decoding="async" src="assests/react.svg" alt="React" />
           <div class="centered-item"><h3>React</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/nextjs.svg" alt="Next.js" />
+          <img loading="lazy" decoding="async" src="assests/nextjs.svg" alt="Next.js" />
           <div class="centered-item"><h3>Next.js</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/javascript.svg" alt="JavaScript" />
+          <img loading="lazy" decoding="async" src="assests/javascript.svg" alt="JavaScript" />
           <div class="centered-item"><h3>JavaScript</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/html.svg" alt="HTML" />
+          <img loading="lazy" decoding="async" src="assests/html.svg" alt="HTML" />
           <div class="centered-item"><h3>HTML</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/css.svg" alt="CSS" />
+          <img loading="lazy" decoding="async" src="assests/css.svg" alt="CSS" />
           <div class="centered-item"><h3>CSS</h3></div>
         </div>
       </div>
@@ -488,15 +506,15 @@
       <h3 class="skills-category-title">Databases</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/mysql.svg" alt="MySQL" />
+          <img loading="lazy" decoding="async" src="assests/mysql.svg" alt="MySQL" />
           <div class="centered-item"><h3>MySQL</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/mongodb.svg" alt="MongoDB" />
+          <img loading="lazy" decoding="async" src="assests/mongodb.svg" alt="MongoDB" />
           <div class="centered-item"><h3>MongoDB</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/postgresql.svg" alt="Aurora PostgreSQL" />
+          <img loading="lazy" decoding="async" src="assests/postgresql.svg" alt="Aurora PostgreSQL" />
           <div class="centered-item"><h3>Aurora PostgreSQL</h3></div>
         </div>
       </div>
@@ -506,11 +524,11 @@
       <h3 class="skills-category-title">Git &amp; API tooling</h3>
       <div class="skills-grid">
         <div class="skill--box">
-          <img src="assests/git.svg" alt="Git" />
+          <img loading="lazy" decoding="async" src="assests/git.svg" alt="Git" />
           <div class="centered-item"><h3>Git</h3></div>
         </div>
         <div class="skill--box">
-          <img src="assests/postman.svg" alt="Postman" />
+          <img loading="lazy" decoding="async" src="assests/postman.svg" alt="Postman" />
           <div class="centered-item"><h3>Postman</h3></div>
         </div>
       </div>
@@ -683,12 +701,15 @@
     <p class="footer-credit">Designed and developed with <i class="fa fa-heart" style="color: #1D9BF0;"></i> by Rohit Ahuja</p>
   </div>
 </footer>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js?v=20260423d"></script>
+    <script src="js/app.js?v=20260917d"></script>
     <script>
       document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
@@ -699,53 +720,5 @@
         }
     </script-->
     
-    <!-- Scroll to home section on page load -->
-    <script>
-      (function() {
-        // Scroll to top (home section) when page loads
-        function scrollToHome() {
-          var hash = window.location.hash;
-          // Only scroll to top if there's no hash or hash is #home
-          if (!hash || hash === '#home' || hash === '') {
-            // Force scroll to top
-            window.scrollTo(0, 0);
-            // Also try smooth scroll after a brief moment
-            setTimeout(function() {
-              window.scrollTo({
-                top: 0,
-                behavior: 'auto'
-              });
-            }, 50);
-          }
-        }
-        
-        // Run immediately
-        scrollToHome();
-        
-        // Also run after DOM is ready
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', scrollToHome);
-        }
-        
-        // Also run after window fully loads
-        window.addEventListener('load', function() {
-          var hash = window.location.hash;
-          if (!hash || hash === '#home' || hash === '') {
-            window.scrollTo(0, 0);
-          }
-        });
-        
-        // Handle hash changes
-        window.addEventListener('hashchange', function() {
-          var hash = window.location.hash;
-          if (!hash || hash === '#home' || hash === '') {
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-            });
-          }
-        });
-      })();
-    </script>
   </body>
 </html>
